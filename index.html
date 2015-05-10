@@ -22,32 +22,35 @@
             <div class='search panel panel-default'>
                 <div class="panel-body">
                     <form>
-                        <div class='row form-group'>
-                            <div class="col-sm-4">
+                        <div class='row'>
+                            <div class="col-sm-6 form-group">
                                 <div class="input-group">
                                   <span class="input-group-addon">From</span>
                                   <input type="text" class="form-control" placeholder="">
                                 </div>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-sm-6 form-group">
                                 <div class="input-group">
                                   <span class="input-group-addon">To</span>
                                   <input type="text" class="form-control" placeholder="">
                                 </div>
                             </div>
-                            <div class='col-sm-4'>
-                                <button type="submit" class="btn btn-success btn-block">Search</button>
-                            </div>
                         </div>
-                        <div class='row form-group'>
-                            <div class="col-sm-4">
-                                <input type="text" class="form-control" placeholder="">
+                        <div class='row'>
+                            <div class="col-sm-4 form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Arrive Date</span>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
                             </div>
-                            <div class="col-sm-4">
-                                <input type="text" class="form-control" placeholder="">
+                            <div class="col-sm-4 form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Return Date</span>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
                             </div>
-                            <div class="col-sm-4 text-center">
-                                <div class="btn-group" data-toggle="buttons">
+                            <div class="col-sm-3 form-group text-left">
+                                <div class="btn-group text-center" data-toggle="buttons">
                                     <label class="btn btn-default active">
                                         <input type="radio" name="way" id="oneway" autocomplete="off" checked> Oneway
                                     </label>
@@ -56,32 +59,48 @@
                                     </label>
                                 </div>
                             </div>
-                        </div>
-                        <div class='row form-group'>
-                            <div class='col-sm-7'>
-                                <div class="input-group">
-                                    <span class="input-group-addon">Adults</span>
-                                    <input type="number" class="form-control" value='1'>
-                                    <span class="input-group-addon">Children</span>
-                                    <input type="number" class="form-control" value='0'>
-                                    <span class="input-group-addon">Infants</span>
-                                    <input type="number" class="form-control" value='0'>
-                                </div>
-                            </div>
-                            <div class='col-sm-3'>
-                                <select class='form-control'>
-                                    <option>Economy</option>
-                                    <option>Premium economy</option>
-                                    <option>Business class</option>
-                                    <option>First class</option>
-                                </select>
-                            </div>
-                            <div class='col-sm-2 text-center'>
+                            <div class='col-sm-1 form-group text-left no-padding'>
                                 <div class="checkbox">
                                     <label>
                                         <input type="checkbox"> Direct
                                     </label>
                                 </div>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class="col-sm-3 form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Adults</span>
+                                    <input type="number" class="form-control" value='1'>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Children</span>
+                                    <input type="number" class="form-control" value='0'>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Infants</span>
+                                    <input type="number" class="form-control" value='0'>
+                                </div>
+                            </div>
+                            <div class='col-sm-3 form-group'>
+                                <div class="input-group">
+                                    <span class="input-group-addon">Class</span>
+                                    <select class='form-control'>
+                                        <option>Economy</option>
+                                        <option>Premium economy</option>
+                                        <option>Business class</option>
+                                        <option>First class</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-sm-12 form-group'>
+                                <button type="submit" class="btn btn-success btn-block">Search</button>
                             </div>
                         </div>
                     </form>
