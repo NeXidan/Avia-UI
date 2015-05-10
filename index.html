@@ -8,10 +8,90 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='css/css.css' rel='stylesheet'>
 
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class='wrapper'>
+        <div class='header'>
+            <span class='logo-text'>
+                Avia
+            </span>
+        </div>
+        <div class='content'>
+            <div class='search panel panel-default'>
+                <div class="panel-body">
+                    <form>
+                        <div class='row form-group'>
+                            <div class="col-sm-4">
+                                <div class="input-group">
+                                  <span class="input-group-addon">From</span>
+                                  <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="input-group">
+                                  <span class="input-group-addon">To</span>
+                                  <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class='col-sm-4'>
+                                <button type="submit" class="btn btn-success btn-block">Search</button>
+                            </div>
+                        </div>
+                        <div class='row form-group'>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" placeholder="">
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" placeholder="">
+                            </div>
+                            <div class="col-sm-4 text-center">
+                                <div class="btn-group" data-toggle="buttons">
+                                    <label class="btn btn-default active">
+                                        <input type="radio" name="way" id="oneway" autocomplete="off" checked> Oneway
+                                    </label>
+                                    <label class="btn btn-default">
+                                        <input type="radio" name="way" id="return" autocomplete="off"> Return
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='row form-group'>
+                            <div class='col-sm-7'>
+                                <div class="input-group">
+                                    <span class="input-group-addon">Adults</span>
+                                    <input type="number" class="form-control" value='1'>
+                                    <span class="input-group-addon">Children</span>
+                                    <input type="number" class="form-control" value='0'>
+                                    <span class="input-group-addon">Infants</span>
+                                    <input type="number" class="form-control" value='0'>
+                                </div>
+                            </div>
+                            <div class='col-sm-3'>
+                                <select class='form-control'>
+                                    <option>Economy</option>
+                                    <option>Premium economy</option>
+                                    <option>Business class</option>
+                                    <option>First class</option>
+                                </select>
+                            </div>
+                            <div class='col-sm-2 text-center'>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Direct
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class='footer'>
+
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
